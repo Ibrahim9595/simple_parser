@@ -28,9 +28,10 @@ def parseJson(path):
         ecus = json.loads(content)
         for index, ecu in enumerate(ecus):
             buffer = ''
-            buffer += ecu['CAN_Type'] + '\n' + ecu['ECU_name'] + '\n'
+            for k in ecu:
+                buffer += ecu[k] + '\n'
 
-            writeFile('dist/ECU_' + str(index + 1)+'.txt', buffer)
+            writeFile('dist/ECU_' + str(index + 1) + '.txt', buffer)
 
 
 def parseXML(path):
@@ -49,15 +50,15 @@ def parseXML(path):
         for val in values:
             buffer += val.text + '\n'
 
-        writeFile('dist/ECU_' + str(index + 1)+'.txt', buffer)
+        writeFile('dist/ECU_' + str(index + 1) + '.txt', buffer)
 
 
 if __name__ == "__main__":
     """
     the file takes the file path as cli argument
     """
-    temp = argv[1].split('.')
-    if len(temp) >= 2:
+    if len(argv) >= 2:
+        temp = argv[1].split('.')
         if path.exists('dist'):
             rmtree('dist')
 
