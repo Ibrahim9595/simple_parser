@@ -1,0 +1,18 @@
+<ECULIST>
+    <ECU>
+        <ECUNAME>ECU1</ECUNAME>
+        <CANTYPE>CAN1</CANTYPE>
+    </ECU>
+    <ECU>
+        <ECUNAME>ECU2</ECUNAME>
+        <CANTYPE>CAN2</CANTYPE>
+    </ECU>
+    <ECU>
+        <ECUNAME>ECU3</ECUNAME>
+        <CANTYPE>CAN3</CANTYPE>
+    </ECU>
+    <ECU>
+        <ECUNAME>ECU4</ECUNAME>
+        <CANTYPE>CAN4</CANTYPE>
+    </ECU>
+</ECULIST>

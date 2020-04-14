@@ -1,0 +1,18 @@
+[
+    {
+        "CAN_Type": "Type1",
+        "ECU_name": "NAme1"
+    },
+    {
+        "CAN_Type": "Type2",
+        "ECU_name": "NAme2"
+    },
+    {
+        "CAN_Type": "Type3",
+        "ECU_name": "NAme3"
+    },
+    {
+        "CAN_Type": "Type4",
+        "ECU_name": "NAme4"
+    }
+]
