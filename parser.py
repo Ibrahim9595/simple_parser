@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from sys import argv
-from os import mkdir
+from os import mkdir, path
+from shutil import rmtree
 import json
 
 
@@ -57,7 +58,11 @@ if __name__ == "__main__":
     """
     temp = argv[1].split('.')
     if len(temp) >= 2:
+        if path.exists('dist'):
+            rmtree('dist')
+
         mkdir('dist')
+
         if (len(temp) == 2 and temp[1] == 'json'):
             parseJson(argv[1])
         elif (len(temp) == 2 and temp[1] == 'xml'):
