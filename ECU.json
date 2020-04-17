@@ -1,7 +1,8 @@
 [
     {
         "CAN_Type": "Type1",
-        "ECU_name": "NAme1"
+        "ECU_name": "NAme1",
+        "Test": "Test"
     },
     {
         "CAN_Type": "Type2",
